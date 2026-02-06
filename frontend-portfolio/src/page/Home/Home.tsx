@@ -1,0 +1,35 @@
+import React from "react";
+import './Home.module.scss';
+import Hero from "../../components/sections/Hero/Hero";
+import About from "../../components/sections/About/About";
+import Skills from "../../components/sections/Skills/Skills";
+import Philosophy from "../../components/sections/Philosophy/Philosophy";
+import Certifications from "../../components/sections/Certifications/Certifications";
+import Experience from "../../components/sections/Experience/Experience";
+import Contact from "../../components/sections/Contact/Contact";
+import Navbar from "../../components/common/Navbar/Navbar";
+import Footer from "../../components/common/Footer/Footer";
+
+type Props = {
+
+}
+
+const Home: React.FC<Props> = ({ }) => {
+    return (
+        <div>
+            <Navbar />
+            <main>
+                <Hero />
+                <About />
+                <Skills />
+                <Philosophy />
+                <Certifications />
+                <Experience />
+                <Contact />
+            </main>
+        <Footer />
+        </div>
+    )
+}
+
+export default Home;

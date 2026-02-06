@@ -1,0 +1,15 @@
+@import "../../../styles/themes";
+
+.container {
+  border: 1px solid var(--border-color);
+  padding: 5px 10px;
+  border-radius: 16px;
+  width: fit-content;
+  background-color: var(--title-background);
+}
+
+.title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}

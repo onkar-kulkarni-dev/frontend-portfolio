@@ -1,0 +1,36 @@
+/* Flex center */
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Flex space between */
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Responsive breakpoints */
+$breakpoints: (
+  "sm": 480px,
+  "md": 768px,
+  "lg": 1024px,
+  "xl": 1280px
+);
+
+@mixin respond($size) {
+  @media (max-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
+
+/* Section spacing */
+@mixin section-padding {
+  padding: 6rem 2rem;
+
+  @include respond("md") {
+    padding: 4rem 1.5rem;
+  }
+}

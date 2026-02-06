@@ -1,0 +1,52 @@
+@import '../../../styles/themes';
+
+.hamburgerLogo {
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2rem;
+}
+
+.logoContainer {
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+  padding: 10px;
+  height: 3.75rem;
+  width: 4.3rem;
+}
+
+.iconContainer {
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+  padding: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightContainer {
+  display: flex;
+  gap: 0.5rem
+}
+
+.mobileMenu {
+  // position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  // top: 3.75rem;
+  right: 0;
+  background: var(--bg-color);
+  border-radius: 32px;
+  padding: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  width: 90vw;
+  left: 0;
+  top: 6rem;
+  border: 1px solid var(--border-color);
+}

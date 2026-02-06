@@ -1,0 +1,56 @@
+@import '../../../styles/themes';
+
+.devName {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.copyrights {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.lastUpdated {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
+.dotStatus {
+  width: 8px;
+  height: 8px;
+  background-color: var(--green-color); // modern green
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.dotStatus {
+  animation: blink 1.2s infinite ease-in-out;
+}
+
+.footer{
+  border-top: 1px solid var(--border-color);
+  margin: 2rem 0;
+  padding: 2rem 0;
+}
