@@ -1,3 +1,77 @@
-.root {
-  /* Hero section styles */
+@import "../../../styles/themes";
+
+.dotStatus {
+  width: 10px;
+  height: 10px;
+  background-color: var(--submit-btn-background); // modern green
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.dotStatus {
+  animation: blink 1.2s infinite ease-in-out;
+}
+
+.heroText {
+  font-size: 12px;
+  color: var(--text-color);
+  padding: 5px 20px;
+  outline: 1px solid var(--border-color);
+  border-radius: 32px;
+  width: fit-content;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+
+  span {
+    color: var(--text-muted);
+  }
+}
+
+.description {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+
+  span {
+    color: var(--text-color);
+    font-weight: 600;
+  }
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: row;
+  align-items: center;
+}
+
+.verticalLine {
+  border-left: 2px solid var(--border-color);
+  height: 2.5rem;
 }

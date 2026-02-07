@@ -1,3 +1,125 @@
-.root {
-  /* Certifications section styles */
+@import "../../../styles/themes";
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+
+  span {
+    color: var(--text-muted);
+  }
+}
+
+.card {
+  background-color: var(--bg-secondary);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  box-shadow: var(--box-shadow);
+}
+.icon {
+  padding: 10px;
+  box-shadow: var(--box-shadow);
+  background-color: var(--bg-secondary);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+.firstRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.hrLine {
+  border-top: 2px solid var(--border-color);
+  margin: 2rem 0;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+}
+
+.openLinkIcon {
+  cursor: pointer;
+}
+
+.name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.issuer {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 1.5rem 0;
+}
+
+.skill {
+  font-size: 0.875rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  display: inline-flex;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  margin-right: 12px;
+  font-weight: 600;
+}
+
+/* DARK MODE */
+:global([data-theme="dark"]) {
+  .blue {
+    background: rgba(96, 165, 250, 0.18);
+    color: #93c5fd;
+  }
+
+  .orange {
+    background: rgba(251, 146, 60, 0.18);
+    color: #fdba74;
+  }
+
+  .teal {
+    background: rgba(34, 211, 238, 0.18);
+    color: #67e8f9;
+  }
+}
+
+/* LIGHT MODE */
+:global([data-theme="light"]) {
+  .blue {
+    background: #eef4ff;
+    color: #2563eb;
+  }
+
+  .orange {
+    background: #fff3e6;
+    color: #ea580c;
+  }
+
+  .teal {
+    background: #ecfeff;
+    color: #0891b2;
+  }
 }

@@ -5,17 +5,18 @@ import { IoMdMenu } from "react-icons/io";
 import { MdClose } from "react-icons/md";
 import { FaTerminal } from "react-icons/fa";
 import Modal from "../Modal/Modal";
+import { useNavbarShadow } from "../../../hooks/useNavbarShadow";
 
 type Props = {};
 
 const Navbar: React.FC<Props> = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const showShadow = useNavbarShadow();
   const handleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   }
-  return <nav>
+  return <nav className={showShadow ? styles. navbarShadow : styles.header}>
     {/* Mobile Navbar */}
-    <div className={styles.header}>
       <div>
         <button className={styles.logoContainer}><FaTerminal className={styles.hamburgerLogo} /></button>
       </div>
@@ -33,7 +34,6 @@ const Navbar: React.FC<Props> = () => {
           </ul>
         </Modal>}
       </div>
-    </div>
   </nav>;
 };
 

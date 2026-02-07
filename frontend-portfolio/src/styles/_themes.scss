@@ -14,6 +14,21 @@
   --green-color: #22c55e;
 
   --title-background: #f0f0f0;
+
+  --submit-btn-background: #000;
+
+  --blue-bg: #eef4ff;
+  --blue-text: #2563eb;
+
+  --orange-bg: #fff3e6;
+  --orange-text: #ea580c;
+
+  --teal-bg: #ecfeff;
+  --teal-text: #0891b2;
+
+  --box-shadow:
+    rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 /* Dark theme */
@@ -32,4 +47,19 @@
   --green-color: #22c55e;
 
   --title-background: #222222;
+
+  --submit-btn-background: #fff;
+
+  --blue-bg: rgba(96, 165, 250, 0.18);
+  --blue-text: #93c5fd;
+
+  --orange-bg: rgba(251, 146, 60, 0.18); // #FB923C
+  --orange-text: #fdba74;
+
+  --teal-bg: rgba(34, 211, 238, 0.18); // #22D3EE
+  --teal-text: #67e8f9;
+
+  --box-shadow:
+    rgba(255, 255, 255, 0.08) 0px 1px 2px 0px,
+    rgba(255, 255, 255, 0.05) 0px 1px 3px 1px;
 }

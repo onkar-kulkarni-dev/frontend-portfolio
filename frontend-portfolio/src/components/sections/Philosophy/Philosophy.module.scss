@@ -1,3 +1,106 @@
-.root {
-  /* Philosophy section styles */
+@import "../../../styles/themes";
+
+.engineering {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.principles {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  text-align: justify;
+  color: var(--text-muted);
+}
+
+.philosophyCard {
+  background-color: var(--bg-secondary);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  box-shadow: var(--box-shadow);
+}
+
+.techPhilosophyText {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.techPhilosophyDesc {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--text-muted);
+}
+
+.firstRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.card {
+  background-color: var(--bg-secondary);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  box-shadow: var(--box-shadow);
+}
+
+.footer {
+  border-top: 2px solid var(--border-color);
+  margin: 2rem 0;
+}
+
+.keyMetricContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.keyMetricText {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.keyMetric {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.icon {
+  padding: 10px;
+  box-shadow: var(--box-shadow);
+  background-color: var(--bg-secondary);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.iconNumber {
+  font-size: 24px;
+  opacity: 0.5;
+}
+
+.desc {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--text-muted);
+  text-align: justify;
 }
