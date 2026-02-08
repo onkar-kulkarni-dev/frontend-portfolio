@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import Home from './page/Home/Home'
 import styles from './App.module.scss'
 
