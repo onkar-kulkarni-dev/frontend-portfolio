@@ -44,7 +44,7 @@ const Skills: React.FC<Props> = () => {
     },
   ];
   return (
-    <section>
+    <section id="skills">
       <Title title="Expertise" />
       <h2 className={styles.title}>
         Technical <span>Skillset</span>

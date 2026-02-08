@@ -3,6 +3,10 @@
 @use "./styles/mixins";
 @use "./styles/themes";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-primary);
   background: var(--bg-color);

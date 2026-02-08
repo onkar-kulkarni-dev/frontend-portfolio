@@ -4,7 +4,7 @@ import './About.module.scss';
 type Props = {};
 
 const About: React.FC<Props> = () => {
-  return <section>About</section>;
+  return <section id="about">About</section>;
 };
 
 export default About;

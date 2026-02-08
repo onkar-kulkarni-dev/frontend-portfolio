@@ -25,11 +25,11 @@ const Navbar: React.FC<Props> = () => {
         {isMenuOpen ? <button className={styles.iconContainer} onClick={handleMenu}><MdClose className={styles.hamburgerLogo} /></button> : <button className={styles.iconContainer} onClick={handleMenu}><IoMdMenu className={styles.hamburgerLogo} /></button>}
         {isMenuOpen && <Modal>
           <ul className={styles.mobileMenu}>
-            <li><a href="#home" onClick={handleMenu}>Home</a></li>
             <li><a href="#about" onClick={handleMenu}>About</a></li>
-            <li><a href="#projects" onClick={handleMenu}>Philosophy</a></li>
-            <li><a href="#projects" onClick={handleMenu}>Certifications</a></li>
-            <li><a href="#projects" onClick={handleMenu}>Experience</a></li>
+            <li><a href="#skills" onClick={handleMenu}>Skills</a></li>
+            <li><a href="#philosophy" onClick={handleMenu}>Philosophy</a></li>
+            <li><a href="#certifications" onClick={handleMenu}>Certifications</a></li>
+            <li><a href="#experience" onClick={handleMenu}>Experience</a></li>
             <li><a href="#contact" onClick={handleMenu}>Contact</a></li>
           </ul>
         </Modal>}

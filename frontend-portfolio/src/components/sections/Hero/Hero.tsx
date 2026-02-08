@@ -8,7 +8,7 @@ type Props = {};
 
 const Hero: React.FC<Props> = () => {
   return (
-    <section>
+    <section id="hero">
       <p className={styles.heroText}>
         <span className={styles.dotStatus} />
         Available for new opportunities

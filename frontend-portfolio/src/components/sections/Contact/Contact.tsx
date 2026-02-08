@@ -13,7 +13,7 @@ type Props = {};
 
 const Contact: React.FC<Props> = () => {
   return (
-    <section>
+    <section id="contact">
       <Title title="Get In Touch" />
       <p className={styles.title}>
         Let's craft something{" "}

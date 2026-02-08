@@ -69,7 +69,7 @@ const Certifications: React.FC<Props> = () => {
   };
 
   return (
-    <section>
+    <section id="certifications">
       <Title title="credentials" />
       <h2 className={styles.title}>
         Certifications & <span>Badges</span>

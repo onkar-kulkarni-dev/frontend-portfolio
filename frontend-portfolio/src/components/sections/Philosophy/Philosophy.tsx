@@ -40,7 +40,7 @@ const Philosophy: React.FC<Props> = () => {
     },
   ];
   return (
-    <section>
+    <section id="philosophy">
       <Title title="Manifesto" />
       <p className={styles.engineering}>Engineering</p>
       <p className={styles.principles}>Principles</p>
