@@ -38,8 +38,13 @@ const Navbar: React.FC<Props> = () => {
     <nav className={showShadow ? styles.navbarShadow : styles.header}>
       {/* Mobile Navbar */}
       <div>
-        <button className={styles.logoContainer}>
-          <FaTerminal className={`${styles.hamburgerLogo} ${styles.logoIcon}`} />
+        <button
+          className={styles.logoContainer}
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
+          <FaTerminal
+            className={`${styles.hamburgerLogo} ${styles.logoIcon}`}
+          />
         </button>
       </div>
       <div className={styles.rightContainer}>

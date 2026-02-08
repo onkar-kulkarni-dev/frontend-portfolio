@@ -6,10 +6,6 @@
   height: 2rem;
 }
 
-.logoIcon {
-  color: var(--bg-color);
-}
-
 .logoContainer {
   border: none;
   cursor: pointer;
@@ -18,6 +14,25 @@
   height: 3.75rem;
   width: 4.3rem;
   background: var(--submit-btn-background);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s ease;
+}
+
+/* ⭐ animate the whole logo */
+.logoContainer:hover {
+  transform: translateX(6px) rotateZ(6deg) scale(1.05);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
+}
+
+/* icon stays stable inside */
+.logoIcon {
+  color: var(--bg-color);
 }
 
 .iconContainer {

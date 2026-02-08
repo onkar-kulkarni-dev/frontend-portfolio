@@ -14,6 +14,10 @@
   background-color: transparent;
 }
 
+.downloadButton:hover {
+  transform: translateY(-2px);
+}
+
 .docIcon {
   color: var(--text-color);
 }
