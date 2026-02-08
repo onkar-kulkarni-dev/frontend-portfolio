@@ -6,13 +6,18 @@
   height: 2rem;
 }
 
+.logoIcon {
+  color: var(--bg-color);
+}
+
 .logoContainer {
   border: none;
   cursor: pointer;
-  border-radius: 100px;
+  border-radius: 23px;
   padding: 10px;
   height: 3.75rem;
   width: 4.3rem;
+  background: var(--submit-btn-background);
 }
 
 .iconContainer {
@@ -86,7 +91,7 @@
 .navbarShadow {
   box-shadow: var(--box-shadow);
   background: var(--bg-color);
-  border-radius: 12px;
+  border-radius: 36px;
   padding: 10px;
   top: 20px;
 }

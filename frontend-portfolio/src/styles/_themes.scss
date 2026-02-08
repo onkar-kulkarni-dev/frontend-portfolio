@@ -32,34 +32,41 @@
 }
 
 /* Dark theme */
+/* Dark theme */
 [data-theme="dark"] {
-  --bg-color: #000;
-  --bg-secondary: #020617;
+  /* Base surfaces */
+  --bg-color: #020617; // avoid pure black
+  --bg-secondary: #0b1220; // main surface
 
+  /* Text */
   --text-color: #e5e7eb;
   --text-muted: #94a3b8;
 
+  /* Accent */
   --accent-color: #818cf8;
   --accent-hover: #a5b4fc;
 
-  --border-color: #1e293b;
+  /* Borders — increased contrast */
+  --border-color: rgba(148, 163, 184, 0.25);
 
   --green-color: #22c55e;
 
-  --title-background: #222222;
+  --title-background: #111827;
 
   --submit-btn-background: #fff;
 
+  /* Skill pills (good already) */
   --blue-bg: rgba(96, 165, 250, 0.18);
   --blue-text: #93c5fd;
 
-  --orange-bg: rgba(251, 146, 60, 0.18); // #FB923C
+  --orange-bg: rgba(251, 146, 60, 0.18);
   --orange-text: #fdba74;
 
-  --teal-bg: rgba(34, 211, 238, 0.18); // #22D3EE
+  --teal-bg: rgba(34, 211, 238, 0.18);
   --teal-text: #67e8f9;
 
+  /* Elevated shadow for dark UI */
   --box-shadow:
-    rgba(255, 255, 255, 0.08) 0px 1px 2px 0px,
-    rgba(255, 255, 255, 0.05) 0px 1px 3px 1px;
+    rgba(0, 0, 0, 0.6) 0px 4px 12px, rgba(0, 0, 0, 0.4) 0px 2px 6px,
+    rgba(255, 255, 255, 0.04) 0px 0px 0px 1px;
 }
