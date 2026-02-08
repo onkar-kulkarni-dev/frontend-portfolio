@@ -12,12 +12,12 @@ const About: React.FC<Props> = () => {
       id: 1,
       icon: <MdOutlineRocketLaunch size={30} />,
       title: "Growth Mindset",
-      desc: "I'm currently in a transitional phase, deepening my expertise in Node.js to build more robust, end-to-end solutions.",
+      desc: "Currently expanding into backend system design with Node.js to build end-to-end application architectures.",
     },
     {
       id: 2,
       icon: <RiFlashlightLine size={30} />,
-      title: "Technical Precision",
+      title: "Engineering Discipline",
       desc: "Whether it's a CSS animation or a database schema, I strive for efficiency, readability, and performance.",
     },
   ];
@@ -29,9 +29,7 @@ const About: React.FC<Props> = () => {
       </h2>
       <p className={styles.description}>
         I'm a <span>Frontend Developer</span> with a deep appreciation for
-        high-fidelity UI and smooth interactions. My journey started with
-        crafting pixel-perfect interfaces, but my curiosity has led me to
-        explore what happens under the hood.
+        high-fidelity UI and smooth interactions. I design frontend systems for enterprise environments where performance, scalability, and maintainability are non-negotiable.
       </p>
       {data.map((item) => {
         return (

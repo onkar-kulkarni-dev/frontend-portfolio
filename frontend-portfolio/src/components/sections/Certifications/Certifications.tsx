@@ -13,7 +13,7 @@ const Certifications: React.FC<Props> = () => {
       id: 1,
       title:
         "Microsoft Certified: Security, Compliance, and Identity Fundamentals",
-      desc: "Microsoft Certified in Security, Compliance, and Identity fundamentals, with a strong understanding of modern identity, governance, and security concepts.",
+      desc: "Validated expertise in identity management, governance, and security principles across Microsoft ecosystems.",
       issuer: "Microsoft",
       date: 2023,
       skills: [
@@ -38,7 +38,7 @@ const Certifications: React.FC<Props> = () => {
     {
       id: 3,
       title: "GitHub Actions",
-      desc: "Hands-on experience with GitHub Actions for building, testing, and deploying applications through automated CI/CD pipelines.",
+      desc: "Implemented automated CI/CD workflows for build, test, and deployment pipelines using GitHub Actions.",
       issuer: "GitHub",
       date: 2026,
       skills: [
@@ -74,6 +74,7 @@ const Certifications: React.FC<Props> = () => {
       <h2 className={styles.title}>
         Certifications & <span>Badges</span>
       </h2>
+      <p className={styles.subTitle}>Industry-recognized certifications validating expertise in cloud security and engineering practices.</p>
       {data.map((item) => {
         return (
           <div key={item.id} className={styles.card}>

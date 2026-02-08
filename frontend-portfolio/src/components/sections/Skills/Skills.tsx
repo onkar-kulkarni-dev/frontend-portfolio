@@ -13,7 +13,7 @@ const Skills: React.FC<Props> = () => {
       id: 1,
       icon: <LuPanelsTopLeft size={30}/>,
       title: "Frontend Development",
-      desc: "Building responsive, accessible, and performant user interfaces.",
+      desc: "Designing scalable UI systems with performance, accessibility, and maintainability as core constraints.",
       skills: [
         "React",
         "React Native",
@@ -47,11 +47,10 @@ const Skills: React.FC<Props> = () => {
     <section id="skills">
       <Title title="Expertise" />
       <h2 className={styles.title}>
-        Technical <span>Skillset</span>
+        Technology <span>Stack</span>
       </h2>
       <p className={styles.subTitle}>
-        A comprehensive list of technologies I've mastered and those I'm
-        currently adding to my arsenal.
+        Technologies used to design, build, and scale production-grade applications.
       </p>
       {data.map((item) => {
         return (

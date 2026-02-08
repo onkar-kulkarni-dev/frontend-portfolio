@@ -17,9 +17,7 @@ const Hero: React.FC<Props> = () => {
         Frontend <span>Developer</span>
       </h2>
       <p className={styles.description}>
-        I'm a detail-oriented <span>Frontend Specialist</span> currently
-        expanding my horizon into backend systems. Passionate about creating
-        seamless user experiences and robust architectures.
+        I'm a detail-oriented <span>Frontend Specialist</span>, engineering high-performance web and mobile applications using React ecosystems and scalable architecture principles. Specialized in building performant UI systems, cross-platform applications, and production-grade frontend architecture.
       </p>
       <div className={styles.socialIcons}>
         <DownloadResume title="Resume(PDF)" />

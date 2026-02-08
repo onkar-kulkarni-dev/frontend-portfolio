@@ -13,7 +13,7 @@ const Education: React.FC<Props> = ({}) => {
       title: "B.E. in Computer Engineering",
       university: "Savitribai Phule Pune University",
       duration: "2018 - 2021",
-      desc: '"Bachelor of Engineering in Computer Engineering, graduated with First Class Distinction, building a strong foundation in software development and system design."',
+      desc: 'Bachelor of Engineering in Computer Engineering — Graduated with First Class Distinction, building strong foundations in software engineering and system design.',
       place: "Pune, India",
     },
   ];

@@ -11,7 +11,7 @@ const Experience: React.FC<Props> = () => {
       title: "Senior Frontend Developer",
       company: "Accenture",
       duration: "2021 - Present",
-      desc: "Engineered enterprise web and mobile experiences at Accenture, building performant, scalable React and React Native systems aligned with real-world business workflows.",
+      desc: "Delivered enterprise React and React Native applications for global clients, integrating REST and GraphQL APIs and optimizing performance across production deployments. Improved UI performance, maintainability, and cross-platform consistency across enterprise applications.",
       skills: [
         "React Architecture",
         "React Native",
@@ -28,7 +28,7 @@ const Experience: React.FC<Props> = () => {
       title: "Intern",
       company: "The Spark Foundation",
       duration: "Aug 2020 - Sep 2020",
-      desc: "Built a full-stack web application at The Sparks Foundation using HTML, Bootstrap, JavaScript, PHP, and MySQL, delivering a functional credit management system.",
+      desc: "Developed a full-stack credit management system with frontend–backend integration, database operations, and production-ready architecture.",
       skills: [
         "Full-Stack Development",
         "Frontend–Backend Integration",

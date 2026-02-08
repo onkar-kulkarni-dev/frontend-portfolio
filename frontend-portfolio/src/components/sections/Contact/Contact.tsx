@@ -21,8 +21,7 @@ const Contact: React.FC<Props> = () => {
       </p>
       <p className={styles.description}>
         I'm currently looking for new opportunities in Frontend and Full-stack
-        roles. If you have a project in mind or just want to chat about Node.js
-        and React, my inbox is always open.
+        roles. Open to product engineering, platform development, and frontend architecture roles.
       </p>
       <div className={styles.contactInfo}>
         <MdMailOutline size={62} className={styles.icon} />
