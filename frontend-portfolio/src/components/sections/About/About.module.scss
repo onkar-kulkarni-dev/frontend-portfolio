@@ -1,3 +1,70 @@
-.root {
-  /* About section styles */
+@import "../../../styles/themes";
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+
+  span {
+    color: var(--text-muted);
+  }
+}
+
+.description {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+
+  span {
+    color: var(--text-color);
+    font-weight: 600;
+  }
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+  flex-direction: row;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.cardDescription {
+  font-size: 1rem;
+  color: var(--text-muted);
+  padding-bottom: 1rem;
+}
+
+.footer {
+  border-top: 2px solid var(--border-color);
+  margin: 2rem 0;
+}
+
+.footerItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 7rem;
+
+  p {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+
+.footerValues {
+  font-size: 1.25rem !important;
+  color: var(--text-color) !important;
+  font-weight: 700 !important;
+  text-transform: capitalize !important;
 }
