@@ -47,7 +47,7 @@ const Navbar: React.FC<Props> = () => {
             className={`${styles.hamburgerLogo} ${styles.logoIcon}`}
           />
         </button>
-        <h1 className={styles.logoName}>Onkar.Dev</h1>
+        <h1 className={styles.logoName} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Onkar.Dev</h1>
       </div>
 
       <div className={styles.rightContainer}>

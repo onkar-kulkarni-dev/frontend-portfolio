@@ -21,6 +21,7 @@ const Certifications: React.FC<Props> = () => {
         "Microsoft 365 Security",
         "Azure Security",
       ],
+      link: 'https://learn.microsoft.com/api/credentials/share/en-gb/OnkarKulkarni-0540/80403E7612EAF3F8?sharingId=97850401415D2CF'
     },
     {
       id: 2,
@@ -34,6 +35,7 @@ const Certifications: React.FC<Props> = () => {
         "Threat Protection",
         "Security Operations",
       ],
+      link: 'https://learn.microsoft.com/api/credentials/share/en-gb/OnkarKulkarni-0540/A2D59D4A93538465?sharingId=97850401415D2CF'
     },
     // {
     //   id: 3,
@@ -98,7 +100,7 @@ const Certifications: React.FC<Props> = () => {
                 );
               })}
 
-              {/* <div className={styles.hrLine}></div> */}
+              <div className={styles.hrLine}></div>
               <div className={styles.footer}>
                 <p>
                   <span>
@@ -106,7 +108,7 @@ const Certifications: React.FC<Props> = () => {
                   </span>
                   verify credentials
                 </p>
-                <IoOpenOutline size={20} className={styles.openLinkIcon} />
+                <a href={item.link} target="_blank" rel="noopener noreferrer"><IoOpenOutline size={20} className={styles.openLinkIcon} /></a>
               </div>
             </div>
           );
