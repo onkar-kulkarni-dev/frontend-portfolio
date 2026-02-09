@@ -5,7 +5,6 @@ import { MdMailOutline } from "react-icons/md";
 import { GrLocation } from "react-icons/gr";
 import { TbBrandGithub } from "react-icons/tb";
 import { LuLinkedin } from "react-icons/lu";
-import { FiTwitter } from "react-icons/fi";
 import Form from "./Form";
 import DownloadResume from "../../common/DownloadResume/DownloadResume";
 
@@ -42,9 +41,12 @@ const Contact: React.FC<Props> = () => {
       <div className={styles.horizonalLine}></div>
       <p className={styles.digitalPresence}>digital presence</p>
       <div className={styles.socialIcons}>
-        <TbBrandGithub size={62} className={styles.icon} />
-        <LuLinkedin size={62} className={styles.icon} />
-        <FiTwitter size={62} className={styles.icon} />
+        <a href="https://github.com/onkar-kulkarni-dev" target="_blank" rel="noopener noreferrer">
+          <TbBrandGithub size={62} className={styles.icon} />
+        </a>
+        <a href="https://www.linkedin.com/in/onkar-kulkarni-4049461a0" target="_blank" rel="noopener noreferrer">
+          <LuLinkedin size={62} className={styles.icon} />
+        </a>
       </div>
       <div className={styles.parentFormContainer}>
         <Form />

@@ -35,19 +35,19 @@ const Certifications: React.FC<Props> = () => {
         "Security Operations",
       ],
     },
-    {
-      id: 3,
-      title: "GitHub Actions",
-      desc: "Implemented automated CI/CD workflows for build, test, and deployment pipelines using GitHub Actions.",
-      issuer: "GitHub",
-      date: 2026,
-      skills: [
-        "CI/CD Pipelines",
-        "Workflow Automation",
-        "Continuous Integration",
-        "Continuous Deployment",
-      ],
-    },
+    // {
+    //   id: 3,
+    //   title: "GitHub Actions",
+    //   desc: "Implemented automated CI/CD workflows for build, test, and deployment pipelines using GitHub Actions.",
+    //   issuer: "GitHub",
+    //   date: 2026,
+    //   skills: [
+    //     "CI/CD Pipelines",
+    //     "Workflow Automation",
+    //     "Continuous Integration",
+    //     "Continuous Deployment",
+    //   ],
+    // },
   ];
   const skillColorMap: Record<string, string> = {
     // Blue
@@ -98,7 +98,7 @@ const Certifications: React.FC<Props> = () => {
                 );
               })}
 
-              <div className={styles.hrLine}></div>
+              {/* <div className={styles.hrLine}></div> */}
               <div className={styles.footer}>
                 <p>
                   <span>

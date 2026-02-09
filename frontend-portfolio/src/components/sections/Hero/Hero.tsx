@@ -23,8 +23,12 @@ const Hero: React.FC<Props> = () => {
         <DownloadResume title="Resume(PDF)" />
         <div className={styles.verticalLine}></div>
         <div style={{ display: "flex", gap: "16px" }}>
-          <TbBrandGithub size={32} />
-          <LuLinkedin size={32} />
+          <a href="https://github.com/onkar-kulkarni-dev" target="_blank" rel="noopener noreferrer">
+            <TbBrandGithub size={32} />
+          </a>
+          <a href="https://www.linkedin.com/in/onkar-kulkarni-4049461a0" target="_blank" rel="noopener noreferrer">
+            <LuLinkedin size={32} />
+          </a>
         </div>
       </div>
     </section>
