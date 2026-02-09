@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Contact.module.scss";
 import Title from "../../common/Title/Title";
-import { MdMailOutline } from "react-icons/md";
+// import { MdMailOutline } from "react-icons/md";
 import { GrLocation } from "react-icons/gr";
 import { TbBrandGithub } from "react-icons/tb";
 import { LuLinkedin } from "react-icons/lu";
