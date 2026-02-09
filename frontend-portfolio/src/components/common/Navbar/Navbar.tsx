@@ -6,12 +6,14 @@ import { MdClose } from "react-icons/md";
 import { FaTerminal } from "react-icons/fa";
 import Modal from "../Modal/Modal";
 import { useNavbarShadow } from "../../../hooks/useNavbarShadow";
+import { useDeviceType } from "../../../hooks/useDeviceType";
 
 type Props = {};
 
 const Navbar: React.FC<Props> = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const showShadow = useNavbarShadow();
+  const { isMobile, isTabletPortrait } = useDeviceType();
 
   const menuRef = useRef<HTMLUListElement | null>(null);
 
@@ -36,8 +38,7 @@ const Navbar: React.FC<Props> = () => {
   };
   return (
     <nav className={showShadow ? styles.navbarShadow : styles.header}>
-      {/* Mobile Navbar */}
-      <div>
+      <div className={styles.logoNameContainer}>
         <button
           className={styles.logoContainer}
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -46,17 +47,47 @@ const Navbar: React.FC<Props> = () => {
             className={`${styles.hamburgerLogo} ${styles.logoIcon}`}
           />
         </button>
+        <h1 className={styles.logoName}>Onkar.Dev</h1>
       </div>
+
       <div className={styles.rightContainer}>
-        <ThemeToggle />
-        {isMenuOpen ? (
-          <button className={styles.iconContainer} onClick={handleMenu}>
-            <MdClose className={styles.hamburgerLogo} />
-          </button>
+        {isMobile || isTabletPortrait ? (
+          <>
+            <ThemeToggle />
+            {isMenuOpen ? (
+              <button className={styles.iconContainer} onClick={handleMenu}>
+                <MdClose className={styles.hamburgerLogo} />
+              </button>
+            ) : (
+              <button className={styles.iconContainer} onClick={handleMenu}>
+                <IoMdMenu className={styles.hamburgerLogo} />
+              </button>
+            )}
+          </>
         ) : (
-          <button className={styles.iconContainer} onClick={handleMenu}>
-            <IoMdMenu className={styles.hamburgerLogo} />
-          </button>
+          <>
+            <ul className={styles.navLinks}>
+              <li className={styles.linkItem}>
+                <a href="#about">About</a>
+              </li>
+              <li className={styles.linkItem}>
+                <a href="#skills">Skills</a>
+              </li>
+              <li className={styles.linkItem}>
+                <a href="#philosophy">Philosophy</a>
+              </li>
+              <li className={styles.linkItem}>
+                <a href="#certifications">Certifications</a>
+              </li>
+              <li className={styles.linkItem}>
+                <a href="#experience">Experience</a>
+              </li>
+              <li className={styles.linkItem}>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+            <ThemeToggle />
+          </>
         )}
         {isMenuOpen && (
           <Modal>

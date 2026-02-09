@@ -11,7 +11,7 @@ const Skills: React.FC<Props> = () => {
   const data = [
     {
       id: 1,
-      icon: <LuPanelsTopLeft size={30}/>,
+      icon: <LuPanelsTopLeft size={30} />,
       title: "Frontend Development",
       desc: "Designing scalable UI systems with performance, accessibility, and maintainability as core constraints.",
       skills: [
@@ -25,14 +25,14 @@ const Skills: React.FC<Props> = () => {
     },
     {
       id: 2,
-      icon: <FiTool size={30}/>,
+      icon: <FiTool size={30} />,
       title: "DevOps & Tools",
       desc: "Streamlining development workflows and deployment pipelines.",
       skills: ["Git", "CI/CD", "Jenkins"],
     },
     {
       id: 3,
-      icon: <IoCodeSlash size={30}/>,
+      icon: <IoCodeSlash size={30} />,
       title: "Core Expertise",
       desc: "Fundamental principles and architectural patterns.",
       skills: [
@@ -50,20 +50,27 @@ const Skills: React.FC<Props> = () => {
         Technology <span>Stack</span>
       </h2>
       <p className={styles.subTitle}>
-        Technologies used to design, build, and scale production-grade applications.
+        Technologies used to design, build, and scale production-grade
+        applications.
       </p>
-      {data.map((item) => {
-        return (
-          <div key={item.id} className={styles.card}>
-            <div className={styles.icon}>{item.icon}</div>
-            <p className={styles.skillTitle}>{item.title}</p>
-            <p className={styles.subTitle}>{item.desc}</p>
-            {item.skills.map((skill, index) => {
-              return <p key={index} className={styles.skill}>{skill}</p>;
-            })}
-          </div>
-        );
-      })}
+      <div className={styles.cardContainer}>
+        {data.map((item) => {
+          return (
+            <div key={item.id} className={styles.card}>
+              <div className={styles.icon}>{item.icon}</div>
+              <p className={styles.skillTitle}>{item.title}</p>
+              <p className={styles.subTitle}>{item.desc}</p>
+              {item.skills.map((skill, index) => {
+                return (
+                  <p key={index} className={styles.skill}>
+                    {skill}
+                  </p>
+                );
+              })}
+            </div>
+          );
+        })}
+      </div>
     </section>
   );
 };

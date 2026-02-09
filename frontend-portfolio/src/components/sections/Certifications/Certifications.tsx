@@ -54,7 +54,7 @@ const Certifications: React.FC<Props> = () => {
     "Security and Compliance": "blue",
     "Microsoft 365 Security": "blue",
     "Azure Security": "blue",
-    
+
     // Teal
     "Azure Security Solutions": "teal",
     "Identity and Access Management": "teal",
@@ -74,39 +74,44 @@ const Certifications: React.FC<Props> = () => {
       <h2 className={styles.title}>
         Certifications & <span>Badges</span>
       </h2>
-      <p className={styles.subTitle}>Industry-recognized certifications validating expertise in cloud security and engineering practices.</p>
-      {data.map((item) => {
-        return (
-          <div key={item.id} className={styles.card}>
-            <div className={styles.firstRow}>
-              <FiAward size={50} className={styles.icon} />
-              <p className={styles.icon}>{item.date}</p>
-            </div>
-            <p className={styles.name}>{item.title}</p>
-            <p className={styles.issuer}>{item.issuer}</p>
-            <p className={styles.desc}>{item.desc}</p>
-            {item.skills.map((skill, index) => {
-              const color = skillColorMap[skill] || "blue";
-              return (
-                <p key={index} className={`${styles.skill} ${styles[color]}`}>
-                  {skill}
-                </p>
-              );
-            })}
+      <p className={styles.subTitle}>
+        Industry-recognized certifications validating expertise in cloud
+        security and engineering practices.
+      </p>
+      <div className={styles.cardContainer}>
+        {data.map((item) => {
+          return (
+            <div key={item.id} className={styles.card}>
+              <div className={styles.firstRow}>
+                <FiAward size={50} className={styles.icon} />
+                <p className={styles.icon}>{item.date}</p>
+              </div>
+              <p className={styles.name}>{item.title}</p>
+              <p className={styles.issuer}>{item.issuer}</p>
+              <p className={styles.desc}>{item.desc}</p>
+              {item.skills.map((skill, index) => {
+                const color = skillColorMap[skill] || "blue";
+                return (
+                  <p key={index} className={`${styles.skill} ${styles[color]}`}>
+                    {skill}
+                  </p>
+                );
+              })}
 
-            <div className={styles.hrLine}></div>
-            <div className={styles.footer}>
-              <p>
-                <span>
-                  <LuShieldCheck size={20} />
-                </span>
-                verify credentials
-              </p>
-              <IoOpenOutline size={20} className={styles.openLinkIcon} />
+              <div className={styles.hrLine}></div>
+              <div className={styles.footer}>
+                <p>
+                  <span>
+                    <LuShieldCheck size={20} />
+                  </span>
+                  verify credentials
+                </p>
+                <IoOpenOutline size={20} className={styles.openLinkIcon} />
+              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </section>
   );
 };

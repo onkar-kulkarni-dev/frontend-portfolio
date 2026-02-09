@@ -45,7 +45,8 @@ const Philosophy: React.FC<Props> = () => {
       <p className={styles.engineering}>Engineering</p>
       <p className={styles.principles}>Principles</p>
       <p className={styles.description}>
-        I engineer application systems where performance, reliability, and clarity drive implementation decisions. My approach is rooted in
+        I engineer application systems where performance, reliability, and
+        clarity drive implementation decisions. My approach is rooted in
         technical pragmatism and a relentless focus on the end-user experience.
       </p>
       <div className={styles.philosophyCard}>
@@ -56,23 +57,27 @@ const Philosophy: React.FC<Props> = () => {
           possible."
         </p>
       </div>
-      {data.map((item: any) => {
-        return (
-          <div key={item.id} className={styles.card}>
-            <div className={styles.firstRow}>
-              <div className={styles.icon}>{item.icon}</div>
-              <p className={`${styles.icon} ${styles.iconNumber}`}>{`0${item.id}`}</p>
+      <div className={styles.cardContainer}>
+        {data.map((item: any) => {
+          return (
+            <div key={item.id} className={styles.card}>
+              <div className={styles.firstRow}>
+                <div className={styles.icon}>{item.icon}</div>
+                <p
+                  className={`${styles.icon} ${styles.iconNumber}`}
+                >{`0${item.id}`}</p>
+              </div>
+              <p className={styles.title}>{item.title}</p>
+              <p className={styles.desc}>{item.desc}</p>
+              <div className={styles.footer}></div>
+              <div className={styles.keyMetricContainer}>
+                <p className={styles.keyMetricText}>key metric</p>
+                <p className={styles.keyMetric}>{item.keyMetric}</p>
+              </div>
             </div>
-            <p className={styles.title}>{item.title}</p>
-            <p className={styles.desc}>{item.desc}</p>
-            <div className={styles.footer}></div>
-            <div className={styles.keyMetricContainer}>
-              <p className={styles.keyMetricText}>key metric</p>
-              <p className={styles.keyMetric}>{item.keyMetric}</p>
-            </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </section>
   );
 };

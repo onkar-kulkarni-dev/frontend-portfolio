@@ -1,3 +1,13 @@
+@import "../../styles/themes";
+@import "../../styles/mixins";
+
+.container {
+  @include sm {
+    width: 100% !important;
+  }
+  width: 87vw;
+  margin-inline: auto;
+}
 .main {
   display: flex;
   flex-direction: column;

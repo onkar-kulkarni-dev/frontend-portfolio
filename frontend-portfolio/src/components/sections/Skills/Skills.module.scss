@@ -1,6 +1,7 @@
 @import "../../../styles/themes";
+@import "../../../styles/mixins";
 
-.title{
+.title {
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--text-color);
@@ -11,13 +12,13 @@
   }
 }
 
-.subTitle{
+.subTitle {
   font-size: 1.25rem;
   color: var(--text-muted);
   margin-bottom: 2rem;
 }
 
-.icon{
+.icon {
   padding: 20px;
   box-shadow: var(--box-shadow);
   background-color: var(--bg-secondary);
@@ -28,27 +29,31 @@
   width: 5rem;
 }
 
-.card{
+.card {
   background-color: var(--bg-secondary);
   padding: 1.5rem;
   border-radius: 12px;
   margin-top: 2rem;
   box-shadow: var(--box-shadow);
+  @media (min-width: 768px) {
+    flex: 1 1 calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
+  }
 }
 
-.skillTitle{
+.skillTitle {
   font-size: 1.5rem;
   font-weight: 700;
   margin-top: 1rem;
 }
 
-.subTitle{
+.subTitle {
   font-size: 1rem;
   color: var(--text-muted);
   margin-bottom: 1rem;
 }
 
-.skill{
+.skill {
   font-size: 0.875rem;
   color: var(--text-color);
   margin-bottom: 0.5rem;
@@ -58,4 +63,15 @@
   border-radius: 12px;
   margin-right: 12px;
   font-weight: 600;
+}
+
+.cardContainer {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include sm {
+    gap: 0;
+  }
 }

@@ -1,36 +1,70 @@
-/* Flex center */
+/* =========================
+   Flex helpers
+   ========================= */
+
 @mixin flex-center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Flex space between */
 @mixin flex-between {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* Responsive breakpoints */
+/* =========================
+   Breakpoints
+   ========================= */
+
 $breakpoints: (
-  "sm": 480px,
-  "md": 768px,
-  "lg": 1024px,
-  "xl": 1280px
+  sm: 480px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
 );
 
+/* Generic respond mixin */
 @mixin respond($size) {
   @media (max-width: map-get($breakpoints, $size)) {
     @content;
   }
 }
 
-/* Section spacing */
+/* Shorthand breakpoint mixins (explicit = safe) */
+@mixin sm {
+  @include respond(sm) {
+    @content;
+  }
+}
+
+@mixin md {
+  @include respond(md) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @include respond(lg) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @include respond(xl) {
+    @content;
+  }
+}
+
+/* =========================
+   Section spacing
+   ========================= */
+
 @mixin section-padding {
   padding: 6rem 2rem;
 
-  @include respond("md") {
+  @include md {
     padding: 4rem 1.5rem;
   }
 }

@@ -15,7 +15,7 @@ type Props = {};
 
 const Home: React.FC<Props> = ({}) => {
   return (
-    <div>
+    <div className={styles.container}>
       <Navbar />
       <main className={styles.main}>
         <div> </div>
