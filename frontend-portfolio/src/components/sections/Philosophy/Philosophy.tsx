@@ -42,8 +42,9 @@ const Philosophy: React.FC<Props> = () => {
   return (
     <section id="philosophy">
       <Title title="Manifesto" />
-      <p className={styles.engineering}>Engineering</p>
-      <p className={styles.principles}>Principles</p>
+      <h2 className={styles.title}>
+        Engineering <span>Principles</span>
+      </h2>
       <p className={styles.description}>
         I engineer application systems where performance, reliability, and
         clarity drive implementation decisions. My approach is rooted in

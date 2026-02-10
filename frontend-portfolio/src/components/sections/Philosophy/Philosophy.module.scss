@@ -1,17 +1,15 @@
 @import "../../../styles/themes";
-@import '../../../styles/mixins';
+@import "../../../styles/mixins";
 
-.engineering {
-  font-size: 2.5rem;
+.title {
+  font-size: 2.5rem !important;
   font-weight: 700;
-  margin-top: 0.5rem;
-}
-
-.principles {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--text-muted);
+  color: var(--text-color);
   margin-bottom: 1rem;
+
+  span {
+    color: var(--text-muted);
+  }
 }
 
 .description {

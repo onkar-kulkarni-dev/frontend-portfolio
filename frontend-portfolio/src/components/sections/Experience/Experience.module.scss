@@ -55,8 +55,89 @@
   font-size: 0.875rem;
   color: var(--text-muted);
   outline: 1px solid var(--border-color);
-    border-radius: 32px;
-    width: fit-content;
-    padding: 0 10px;
-    background-color: var(--bg-secondary);
+  border-radius: 32px;
+  width: fit-content;
+  padding: 0 10px;
+  background-color: var(--bg-secondary);
+}
+
+.timeline {
+  display: block;
+}
+
+.timelineRow {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .timeline {
+    position: relative;
+  }
+
+  /* vertical line */
+  .timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 3px;
+    background: var(--border-color);
+    transform: translateX(-50%);
+  }
+
+  .timelineRow {
+    display: grid;
+    grid-template-columns: 1fr 60px 1fr;
+    margin-bottom: 4rem;
+    align-items: start;
+  }
+
+  /* center node */
+  .nodeWrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .nodeWrapper::before {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background-color: var(--bg-primary);
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  .node {
+    width: 16px;
+    height: 16px;
+    border: 3px solid var(--border-color);
+    background: var(--bg-primary);
+    border-radius: 50%;
+  }
+
+  /* card spacing (gap effect) */
+  .leftSlot,
+  .rightSlot {
+    padding-top: 4px;
+  }
+
+  .leftSlot {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 48px; // GAP before card
+  }
+
+  .rightSlot {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 48px; // GAP before card
+  }
+
+  .card {
+    max-width: 520px;
+  }
 }

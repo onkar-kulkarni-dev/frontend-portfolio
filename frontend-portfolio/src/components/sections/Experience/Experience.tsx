@@ -44,23 +44,41 @@ const Experience: React.FC<Props> = () => {
       <h2 className={styles.title}>
         Professional <span>Journey</span>
       </h2>
-      {data.map((item) => {
-        return (
-          <div key={item.id} className={styles.card}>
-            <p className={styles.duration}>{item.duration}</p>
-            <p className={styles.role}>{item.title}</p>
-            <p className={styles.company}>{item.company}</p>
-            <p className={styles.desc}>{item.desc}</p>
-            {item.skills.map((skill, index) => {
-              return (
-                <p key={index} className={styles.skill}>
-                  {skill}
-                </p>
-              );
-            })}
-          </div>
-        );
-      })}
+      <div className={styles.timeline}>
+        {data.map((item, index) => {
+          const card = (
+            <div className={styles.card}>
+              <p className={styles.duration}>{item.duration}</p>
+              <p className={styles.role}>{item.title}</p>
+              <p className={styles.company}>{item.company}</p>
+              <p className={styles.desc}>{item.desc}</p>
+
+              <div className={styles.skills}>
+                {item.skills.map((skill, i) => (
+                  <p key={i} className={styles.skill}>
+                    {skill}
+                  </p>
+                ))}
+              </div>
+            </div>
+          );
+
+          return (
+            <div key={item.id} className={styles.timelineRow}>
+              {/* LEFT */}
+              <div className={styles.leftSlot}>{index % 2 !== 0 && card}</div>
+
+              {/* CENTER NODE */}
+              <div className={styles.nodeWrapper}>
+                <span className={styles.node} />
+              </div>
+
+              {/* RIGHT */}
+              <div className={styles.rightSlot}>{index % 2 === 0 && card}</div>
+            </div>
+          );
+        })}
+      </div>
     </section>
   );
 };
