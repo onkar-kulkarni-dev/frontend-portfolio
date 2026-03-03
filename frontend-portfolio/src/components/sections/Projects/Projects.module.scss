@@ -1,0 +1,151 @@
+@import "../../../styles/themes";
+@import "../../../styles/mixins";
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+
+    span {
+        color: var(--text-muted);
+    }
+}
+
+.subTitle {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    text-align: justify;
+    color: var(--text-muted);
+}
+
+.cardContainer {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center; // center last row if odd
+
+    /* Mobile: keep default single column */
+    @include sm {
+        flex-direction: column;
+        gap: 1rem; // optional smaller gap for mobile
+    }
+
+    /* Tablet: 2 per row */
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .card {
+            flex: 1 1 calc(50% - 2rem);
+            max-width: calc(50% - 2rem);
+        }
+    }
+
+    /* Laptop and above: 3 per row */
+    @media (min-width: 1025px) {
+        .card {
+            flex: 1 1 calc(33.33% - 2rem);
+            max-width: calc(33.33% - 2rem);
+        }
+    }
+}
+
+.card {
+    background-color: var(--bg-secondary);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+    box-shadow: var(--box-shadow);
+
+    @media (min-width: 768px) {
+        flex: 1 1 calc(50% - 2rem);
+        max-width: calc(50% - 2rem);
+    }
+}
+
+.skill {
+    font-size: 0.875rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    display: inline-flex;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    margin-right: 12px;
+    font-weight: 600;
+}
+
+.footer {
+    border-top: 2px solid var(--border-color);
+    margin: 2rem 0;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    button {
+        display: flex;
+        gap: 0.5rem;
+        padding: 3px 25px;
+        height: 2.5rem;
+        border-radius: 16px;
+        align-items: center;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        box-shadow: var(--box-shadow);
+        background-color: transparent;
+        color: var(----text-color);
+        font-weight: 600;
+    }
+
+    .liveBtn {
+        background-color: var(--text-color);
+        color: var(--bg-color);
+    }
+}
+
+.projectName {
+    color: var(--text-color);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.projectDesc {
+    color: var(----text-muted);
+    text-align: justify;
+    padding-bottom: 1rem;
+}
+
+// .imageWrapper {
+//     width: 100%;
+//     height: 15rem;
+//     overflow: hidden; // important for zoom effect
+//     border-radius: 12px;
+
+//     img {
+//         width: 100%;
+//         height: 100%;
+//         object-fit: cover;
+//         transition: transform 0.4s ease; // smooth animation
+//     }
+// }
+
+.imageWrapper {
+    width: 100%;
+    height: 15rem;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.imageWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; // 🔥 THIS prevents cutting
+    transition: transform 0.4s ease;
+}
+
+/* When card is hovered, animate image */
+.card:hover .imageWrapper img {
+    transform: scale(1.08); // zoom effect
+}

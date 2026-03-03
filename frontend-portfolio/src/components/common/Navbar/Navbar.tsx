@@ -74,7 +74,7 @@ const Navbar: React.FC<Props> = () => {
                 <a href="#skills">Skills</a>
               </li>
               <li className={styles.linkItem}>
-                <a href="#philosophy">Philosophy</a>
+                <a href="#projects">Projects</a>
               </li>
               <li className={styles.linkItem}>
                 <a href="#certifications">Certifications</a>

@@ -10,6 +10,7 @@ import Contact from "../../components/sections/Contact/Contact";
 import Navbar from "../../components/common/Navbar/Navbar";
 import Footer from "../../components/common/Footer/Footer";
 import Education from "../../components/sections/Education/Education";
+import Projects from "../../components/sections/Projects/Projects";
 
 type Props = {};
 
@@ -23,6 +24,7 @@ const Home: React.FC<Props> = ({}) => {
         <About />
         <Skills />
         <Philosophy />
+        <Projects />
         <Experience />
         <Education />
         <Certifications />
