@@ -103,8 +103,8 @@ const Navbar: React.FC<Props> = () => {
                 </a>
               </li>
               <li>
-                <a href="#philosophy" onClick={handleMenu}>
-                  Philosophy
+                <a href="#projects" onClick={handleMenu}>
+                  Projects
                 </a>
               </li>
               <li>
