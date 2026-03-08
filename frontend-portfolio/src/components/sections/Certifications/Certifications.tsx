@@ -39,9 +39,9 @@ const Certifications: React.FC<Props> = () => {
     },
     {
       id: 3,
-      title: "GitHub Actions",
+      title: "Microsoft Certified: GitHub Actions",
       desc: "Implemented automated CI/CD workflows for build, test, and deployment pipelines using GitHub Actions.",
-      issuer: "GitHub",
+      issuer: "Microsoft",
       date: 2026,
       skills: [
         "CI/CD Pipelines",
