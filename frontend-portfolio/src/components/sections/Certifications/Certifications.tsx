@@ -37,19 +37,20 @@ const Certifications: React.FC<Props> = () => {
       ],
       link: 'https://learn.microsoft.com/api/credentials/share/en-gb/OnkarKulkarni-0540/A2D59D4A93538465?sharingId=97850401415D2CF'
     },
-    // {
-    //   id: 3,
-    //   title: "GitHub Actions",
-    //   desc: "Implemented automated CI/CD workflows for build, test, and deployment pipelines using GitHub Actions.",
-    //   issuer: "GitHub",
-    //   date: 2026,
-    //   skills: [
-    //     "CI/CD Pipelines",
-    //     "Workflow Automation",
-    //     "Continuous Integration",
-    //     "Continuous Deployment",
-    //   ],
-    // },
+    {
+      id: 3,
+      title: "GitHub Actions",
+      desc: "Implemented automated CI/CD workflows for build, test, and deployment pipelines using GitHub Actions.",
+      issuer: "GitHub",
+      date: 2026,
+      skills: [
+        "CI/CD Pipelines",
+        "Workflow Automation",
+        "Continuous Integration",
+        "Continuous Deployment",
+      ],
+      link: 'https://learn.microsoft.com/en-gb/users/onkarkulkarni-0540/credentials/bc11a4f9442606e9'
+    },
   ];
   const skillColorMap: Record<string, string> = {
     // Blue
