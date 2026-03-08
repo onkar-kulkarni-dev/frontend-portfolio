@@ -3,6 +3,8 @@ import styles from "./About.module.scss";
 import Title from "../../common/Title/Title";
 import { MdOutlineRocketLaunch } from "react-icons/md";
 import { RiFlashlightLine } from "react-icons/ri";
+import CommonHelper from "../../../helper/commonHelper";
+import { CareerStartDate, MajorProjects } from "../../../constants/constant";
 
 type Props = {};
 
@@ -48,8 +50,8 @@ const About: React.FC<Props> = () => {
         <p>Major Projects</p>
       </div>
       <div className={styles.footerItems}>
-        <p className={styles.footerValues}>4.6+ years</p>
-        <p className={styles.footerValues}>4+</p>
+        <p className={styles.footerValues}>{CommonHelper.getTotalExperience(CareerStartDate)}</p>
+        <p className={styles.footerValues}>{`${MajorProjects}+`}</p>
       </div>
     </section>
   );
