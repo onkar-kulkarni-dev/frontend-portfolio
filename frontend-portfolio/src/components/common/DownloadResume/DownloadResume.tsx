@@ -9,8 +9,8 @@ type Props = {
 const DownloadResume: React.FC<Props> = ({ title }) => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/resume/Onkar_Kulkarni_Resume.pdf";
-    link.download = "Onkar_Kulkarni_Resume.pdf";
+    link.href = "/resume/Onkar_Kulkarni_FrontEnd_Dev.pdf";
+    link.download = "Onkar_Kulkarni_FrontEnd_Dev.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
