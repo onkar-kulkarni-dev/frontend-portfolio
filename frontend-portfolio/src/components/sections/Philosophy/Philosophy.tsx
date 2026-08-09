@@ -6,9 +6,8 @@ import { LuShieldCheck } from "react-icons/lu";
 import { FiRepeat } from "react-icons/fi";
 import Title from "../../common/Title/Title";
 
-type Props = {};
 
-const Philosophy: React.FC<Props> = () => {
+const Philosophy = () => {
   const data = [
     {
       id: 1,

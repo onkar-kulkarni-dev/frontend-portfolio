@@ -5,10 +5,9 @@ import { MdOutlineRocketLaunch } from "react-icons/md";
 import { RiFlashlightLine } from "react-icons/ri";
 import CommonHelper from "../../../helper/commonHelper";
 import { CareerStartDate, MajorProjects } from "../../../constants/constant";
+import profileImage from "../../../assets/onkar.PNG"
 
-type Props = {};
-
-const About: React.FC<Props> = () => {
+const About = () => {
   const data = [
     {
       id: 1,
@@ -33,17 +32,31 @@ const About: React.FC<Props> = () => {
         I'm a <span>Frontend Developer</span> with a deep appreciation for
         high-fidelity UI and smooth interactions. I design frontend systems for enterprise environments where performance, scalability, and maintainability are non-negotiable.
       </p>
-      {data.map((item) => {
-        return (
-          <div key={item.id}>
-            <div className={styles.cardHeader}>
-              {item.icon}
-              <p className={styles.cardTitle}>{item.title}</p>
-            </div>
-            <p className={styles.cardDescription}>{item.desc}</p>
-          </div>
-        );
-      })}
+
+      <div className={styles.story}>
+        <div className={styles.profileWrapper}>
+          <img
+            className={styles.profileImage}
+            src={profileImage}
+            alt="Onkar Kulkarni"
+          />
+        </div>
+
+        <div className={styles.content}>
+          {data.map((item) => {
+            return (
+              <div key={item.id} className={styles.card}>
+                <div className={styles.cardHeader}>
+                  {item.icon}
+                  <p className={styles.cardTitle}>{item.title}</p>
+                </div>
+                <p className={styles.cardDescription}>{item.desc}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
       <div className={styles.footer}></div>
       <div className={styles.footerItems}>
         <p>Experience</p>

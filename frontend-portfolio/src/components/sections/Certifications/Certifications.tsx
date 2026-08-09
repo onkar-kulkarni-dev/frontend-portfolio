@@ -5,9 +5,8 @@ import { FiAward } from "react-icons/fi";
 import { LuShieldCheck } from "react-icons/lu";
 import { IoOpenOutline } from "react-icons/io5";
 
-type Props = {};
 
-const Certifications: React.FC<Props> = () => {
+const Certifications = () => {
   const data = [
     {
       id: 1,

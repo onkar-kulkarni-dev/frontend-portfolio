@@ -8,9 +8,8 @@ import { LuLinkedin } from "react-icons/lu";
 import Form from "./Form";
 import DownloadResume from "../../common/DownloadResume/DownloadResume";
 
-type Props = {};
 
-const Contact: React.FC<Props> = () => {
+const Contact = () => {
   return (
     <section id="contact">
       <Title title="Get In Touch" />

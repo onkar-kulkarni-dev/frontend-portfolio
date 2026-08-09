@@ -12,9 +12,8 @@ import Footer from "../../components/common/Footer/Footer";
 import Education from "../../components/sections/Education/Education";
 import Projects from "../../components/sections/Projects/Projects";
 
-type Props = {};
 
-const Home: React.FC<Props> = ({}) => {
+const Home = () => {
   return (
     <div className={styles.container}>
       <Navbar />

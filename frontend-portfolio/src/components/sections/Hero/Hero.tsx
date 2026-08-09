@@ -4,9 +4,8 @@ import DownloadResume from "../../common/DownloadResume/DownloadResume";
 import { TbBrandGithub } from "react-icons/tb";
 import { LuLinkedin } from "react-icons/lu";
 
-type Props = {};
 
-const Hero: React.FC<Props> = () => {
+const Hero = () => {
   return (
     <section id="hero">
       <p className={styles.heroText}>

@@ -5,9 +5,8 @@ import { LuPanelsTopLeft } from "react-icons/lu";
 import { FiTool } from "react-icons/fi";
 import { IoCodeSlash } from "react-icons/io5";
 
-type Props = {};
 
-const Skills: React.FC<Props> = () => {
+const Skills = () => {
   const data = [
     {
       id: 1,

@@ -2,9 +2,8 @@ import React from "react";
 import styles from "./Experience.module.scss";
 import Title from "../../common/Title/Title";
 
-type Props = {};
 
-const Experience: React.FC<Props> = () => {
+const Experience = () => {
   const data = [
     {
       id: 1,

@@ -4,9 +4,8 @@ import Title from "../../common/Title/Title";
 import { IoIosCalendar } from "react-icons/io";
 import { GrLocation } from "react-icons/gr";
 
-type Props = {};
 
-const Education: React.FC<Props> = ({}) => {
+const Education = ({}) => {
   const data = [
     {
       id: 1,

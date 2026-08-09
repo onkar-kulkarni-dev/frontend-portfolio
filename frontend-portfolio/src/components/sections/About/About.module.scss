@@ -22,6 +22,37 @@
   }
 }
 
+.story {
+  display: grid;
+  grid-template-columns: minmax(220px, 360px) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.profileWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.profileImage {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  border-radius: 1.25rem;
+  object-fit: cover;
+  box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.12);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  width: 100%;
+}
+
 .cardHeader {
   display: flex;
   align-items: center;
@@ -45,6 +76,24 @@
 .footer {
   border-top: 2px solid var(--border-color);
   margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .story {
+    grid-template-columns: 1fr;
+  }
+
+  .profileWrapper {
+    order: 1;
+  }
+
+  .content {
+    order: 2;
+  }
+
+  .profileImage {
+    max-width: 260px;
+  }
 }
 
 .footerItems {

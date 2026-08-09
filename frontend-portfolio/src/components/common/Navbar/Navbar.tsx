@@ -8,9 +8,8 @@ import Modal from "../Modal/Modal";
 import { useNavbarShadow } from "../../../hooks/useNavbarShadow";
 import { useDeviceType } from "../../../hooks/useDeviceType";
 
-type Props = {};
 
-const Navbar: React.FC<Props> = () => {
+const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const showShadow = useNavbarShadow();
   const { isMobile, isTabletPortrait } = useDeviceType();
@@ -36,18 +35,30 @@ const Navbar: React.FC<Props> = () => {
   const handleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  
+  const handleScrollTop = (event) => {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" })
+
+    window.history.replaceState(
+      null,
+      "",
+      window.location.pathname + window.location.search
+    );
+  }
+
   return (
     <nav className={showShadow ? styles.navbarShadow : styles.header}>
       <div className={styles.logoNameContainer}>
         <button
           className={styles.logoContainer}
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          onClick={handleScrollTop}
         >
           <FaTerminal
             className={`${styles.hamburgerLogo} ${styles.logoIcon}`}
           />
         </button>
-        <h1 className={styles.logoName} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Onkar.Dev</h1>
+        <h1 className={styles.logoName} onClick={handleScrollTop}>Onkar.Dev</h1>
       </div>
 
       <div className={styles.rightContainer}>

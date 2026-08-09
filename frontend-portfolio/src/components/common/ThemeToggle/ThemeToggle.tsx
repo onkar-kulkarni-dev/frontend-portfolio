@@ -4,9 +4,8 @@ import { useTheme } from "../../../hooks/useTheme";
 import { CiLight } from "react-icons/ci";
 import { FaRegMoon } from "react-icons/fa";
 
-type Props = {};
 
-const ThemeToggle: React.FC<Props> = ({ }) => {
+const ThemeToggle = () => {
   const { theme, toggleTheme } = useTheme();
   return (
     <button onClick={toggleTheme} className={styles.btnContainer}>

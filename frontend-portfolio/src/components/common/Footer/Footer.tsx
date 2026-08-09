@@ -1,9 +1,7 @@
 import React from "react";
 import styles from './Footer.module.scss';
 
-type Props = {};
-
-const Footer: React.FC<Props> = () => {
+const Footer = () => {
   const date = new Date();
   const monthName = date.toLocaleString('default', { month: 'long' });
   const year = date.getFullYear();
