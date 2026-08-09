@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Contact.module.scss";
 import Title from "../../common/Title/Title";
 // import { MdMailOutline } from "react-icons/md";

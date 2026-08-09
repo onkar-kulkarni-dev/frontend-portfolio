@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Certifications.module.scss";
 import Title from "../../common/Title/Title";
 import { FiAward } from "react-icons/fi";

@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Skills.module.scss";
 import Title from "../../common/Title/Title";
 import { LuPanelsTopLeft } from "react-icons/lu";

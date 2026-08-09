@@ -1,11 +1,9 @@
-import React from "react";
 import styles from "./Education.module.scss";
 import Title from "../../common/Title/Title";
 import { IoIosCalendar } from "react-icons/io";
 import { GrLocation } from "react-icons/gr";
 
-
-const Education = ({}) => {
+const Education = () => {
   const data = [
     {
       id: 1,

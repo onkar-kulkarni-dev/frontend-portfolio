@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Experience.module.scss";
 import Title from "../../common/Title/Title";
 

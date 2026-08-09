@@ -1,11 +1,10 @@
-import React from "react";
 import styles from "./About.module.scss";
 import Title from "../../common/Title/Title";
 import { MdOutlineRocketLaunch } from "react-icons/md";
 import { RiFlashlightLine } from "react-icons/ri";
 import CommonHelper from "../../../helper/commonHelper";
 import { CareerStartDate, MajorProjects } from "../../../constants/constant";
-import profileImage from "../../../assets/onkar.PNG"
+import profileImage from "../../../assets/onkar.PNG";
 
 const About = () => {
   const data = [

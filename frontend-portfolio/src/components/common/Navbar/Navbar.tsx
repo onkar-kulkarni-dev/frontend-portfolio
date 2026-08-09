@@ -35,10 +35,10 @@ const Navbar = () => {
   const handleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  
-  const handleScrollTop = (event) => {
+
+  const handleScrollTop = (event: React.MouseEvent<HTMLElement>) => {
     event.preventDefault();
-    window.scrollTo({ top: 0, behavior: "smooth" })
+    window.scrollTo({ top: 0, behavior: "smooth" });
 
     window.history.replaceState(
       null,

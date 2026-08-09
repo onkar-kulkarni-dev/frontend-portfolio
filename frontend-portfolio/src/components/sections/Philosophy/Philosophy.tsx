@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Philosophy.module.scss";
 import { RiFlashlightLine } from "react-icons/ri";
 import { FiCpu } from "react-icons/fi";
@@ -58,7 +57,7 @@ const Philosophy = () => {
         </p>
       </div>
       <div className={styles.cardContainer}>
-        {data.map((item: any) => {
+        {data.map((item) => {
           return (
             <div key={item.id} className={styles.card}>
               <div className={styles.firstRow}>
